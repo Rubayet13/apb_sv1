@@ -1,0 +1,10 @@
+interface apb_interface; 
+	logic PCLK; 
+	logic PRESETn; 
+	logic [0:31] PADDR; 
+	logic PSEL; 
+	logic PENABLE; 
+	logic [0:31] PWRITE; 
+	logic PWDATA; 
+	logic PRDATA; 
+endinterface 

@@ -1,0 +1,10 @@
+class apb_env; 
+	apb_scb scb;
+	apb_agent agent;
+	function new (string name = "apb_env", virtual apb_intf); 
+		$display ("%s is created", name); 
+		scb = new ("scb",apb_intf);
+		agent = new ("env",apb_intf);
+	endfunction 
+
+endclass
